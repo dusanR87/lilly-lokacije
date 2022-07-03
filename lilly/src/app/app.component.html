@@ -1,11 +1,13 @@
+<ul class="menu-ul">
 
-<a routerLink="/zadatak1" >
-    Zadatak 1
-  </a>
+    <a routerLink="/zadatak1" [routerLinkActive]="['is-active']" >   <li class="menu-li">Zadatak 1</li></a>
+ 
+    <a routerLink="/zadatak2" [routerLinkActive]="['is-active']" > <li class="menu-li">Zadatak 2</li></a>
+  
+</ul>
 
-  <a routerLink="/zadatak2" >
-    Zadatak 2
-  </a>
+
+  
 
 <router-outlet></router-outlet>
 

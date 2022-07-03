@@ -1,9 +1,13 @@
-<h1>Prikaz kesiranih podataka</h1>
-<button mat-raised-button color="primary" (click)="kesiraj()">Prikazi kesirane podatke</button>
-<button mat-raised-button color="warn" (click)="onClickClear()">Obrisi sve podatke</button>
-<button mat-raised-button color="primary" (click)="mapirajPodatke()">Prikazi mapirane podatke</button>
+<div class="zad2-div">
+    <h1>Prikaz kesiranih podataka</h1>
+    <button mat-raised-button color="primary" (click)="kesiraj()">Prikazi kesirane podatke</button>
+    <button mat-raised-button color="warn" (click)="onClickClear()" class="ml20">Obrisi sve podatke</button>
+    <button mat-raised-button color="primary" (click)="mapirajPodatke()" class="ml20">Prikazi mapirane podatke</button>
+</div>
+<br>
+<br>
+    <pre>
+        {{ kesiraniPodaci | json }}
+        {{ prozivodMapirani | json }}
+    </pre>
 
-<p>
-    {{ kesiraniPodaci | json }}
-    {{ prozivodMapirani | json }}
-</p>
